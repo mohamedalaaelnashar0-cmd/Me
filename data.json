@@ -7,7 +7,7 @@
     "kicker": "ركن خاص بينا",
     "title": "حكايتنا",
     "subtitle": "كل حاجة حلوة بدأت من لحظة واحدة بسيطة.",
-    "secretWord": "بحبك",
+    "secretWord": "حموتى",
     "adminSecret": "هيرو"
   },
   "hero": {
@@ -17,7 +17,7 @@
     "description": "فيه لحظات بتتحول لذكريات، وناس بتتحول لبيت. الصفحة دي فيها شوية من لحظاتنا احنا.",
     "dateLabel": "من يوم",
     "date": "14.06.2024",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/mohamedalaaelnashar0-cmd/Me/main/uploads/photo_1789782237054_8977.jpg",
     "photoTag": "احنا بس"
   },
   "story": [
@@ -44,12 +44,12 @@
   ],
   "memories": [
     {
-      "image": "",
+      "image": "https://raw.githubusercontent.com/mohamedalaaelnashar0-cmd/Me/main/uploads/photo_1789782276298_4247.jpg",
       "date": "يوم ما اتقابلنا",
       "title": "ذكرى حبيبة لقلبي"
     },
     {
-      "image": "",
+      "image": "https://raw.githubusercontent.com/mohamedalaaelnashar0-cmd/Me/main/uploads/photo_1789782310038_9799.jpg",
       "date": "حاجات بسيطة",
       "title": "إحنا وبس"
     },
