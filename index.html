@@ -512,10 +512,10 @@ const SITE_DATA = {
     "adminSecret": "هيرو"
   },
   "hero": {
-    "eyebrow": "حكاية تستاهل تتحكي",
-    "titleLine1": "قلبين",
-    "titleLine2": "وحكاية واحدة",
-    "description": "فيه لحظات بتتحول لذكريات، وناس بتتحول لبيت. الصفحة دي فيها شوية من لحظاتنا احنا.",
+    "eyebrow": "حكايتنا",
+    "titleLine1": "أحلى",
+    "titleLine2": "حاجة حصلتلى",
+    "description": "من أول لحظة جمعتنا لحد النهارده، كل حاجة بينا ليها مكان خاص عندي.",
     "dateLabel": "من يوم",
     "date": "14.06.2024",
     "image": "",
@@ -582,7 +582,7 @@ const SITE_DATA = {
   },
   "promises": {
     "title": "مش بس كلام.. دي وعود هنفّذها لأنك تستاهلى",
-    "sub": "مش هقولك كلام وأسيب، دي خطوات ناوي أعملهالك واحدة واحدة.",
+    "sub": "مش هقولش هقولك كلام حلو وخلاص، كل وعد هنا نفسي أحققه معاكي، ونفضل نضيف وعود وذكريات جديدة طول ما إحنا سوا.ك كلام وأسيب، دي حاجات ناوي أعملهالك واحدة واحدة.",
     "items": [
       {
         "title": "هسمعك أكتر",
@@ -653,7 +653,7 @@ const SITE_DATA = {
       <button id="unlockBtn">ادخل</button>
     </div>
     <div class="hint" id="hint"></div>
-    <div class="intro-love-line"><span class="beat">♥</span> هنا قلبين بيفضلوا على بعض <span class="beat">♥</span></div>
+    <div class="intro-love-line"><span class="beat">♥</span> هنا مكاننا سوا <span class="beat">♥</span></div>
   </div>
 </section>
 
@@ -681,7 +681,7 @@ const SITE_DATA = {
         <p class="hero-text" id="heroDescription"></p>
         <div class="hero-meta">
           <div><strong id="namesDisplay"></strong><span id="dateLabel"></span></div>
-          <div><strong id="heroDate"></strong><span>ولسه مستمرين</span></div>
+          <div><strong id="heroDate"></strong><span>لآخر العمر</span></div>
         </div>
       </div>
       <div class="arch-frame reveal">
@@ -698,7 +698,7 @@ const SITE_DATA = {
       <div class="section-head reveal">
         <div class="divider"><span id="storyKicker">حكايتنا</span></div>
         <h2 class="section-title">إزاي كل حاجة بدأت</h2>
-        <p class="section-sub">مش كل الحكاية في تواريخ، بس كل تاريخ فيهم بيفتكرنا ببداية فصل جديد.</p>
+        <p class="section-sub">يمكن الأيام عدت، بس إحساسي بكل لحظة لسه موجود.</p>
       </div>
       <div class="timeline" id="timeline"></div>
     </div>
@@ -708,8 +708,8 @@ const SITE_DATA = {
     <div class="container">
       <div class="section-head reveal">
         <div class="divider"><span>ليه بحبك</span></div>
-        <h2 class="section-title" id="reasonsTitle">مليون سبب وسبب</h2>
-        <p class="section-sub" id="reasonsSub">مش محتاج أفكر كتير — الأسباب دي جاية لوحدها من غير ما أسأل.</p>
+        <h2 class="section-title" id="reasonsTitle">مليون سبب ميكفيش</h2>
+        <p class="section-sub" id="reasonsSub">كل مرة بسأل نفسي بحبك ليه، بلاقي سبب جديد يخليني أحبك أكتر.</p>
       </div>
       <div class="reasons-grid" id="reasonsGrid"></div>
     </div>
@@ -719,8 +719,8 @@ const SITE_DATA = {
     <div class="container">
       <div class="section-head reveal">
         <div class="divider"><span>لحظاتنا</span></div>
-        <h2 class="section-title">قطع صغيرة مننا</h2>
-        <p class="section-sub">الأماكن والوشوش واللحظات الصغيرة اللي تستاهل أكتر من مجرد صورة في الموبايل.</p>
+        <h2 class="section-title">من أيامنا</h2>
+        <p class="section-sub">كل صورة هنا وراها لحظة بحبها، ووجودك فيها هو اللي مخليها غالية عندي لحد دلوقتي.❤️</p>
       </div>
       <div class="memory-grid" id="memoryGrid"></div>
     </div>
@@ -776,7 +776,7 @@ const SITE_DATA = {
 
   <footer class="footer container">
     <span id="footerNames"></span>
-    <span>صُنع من لحظات تستاهل تتفتكر</span>
+    <span>إهداء منى لحبيبة عيوني رحوبتى</span>
   </footer>
 </main>
 
@@ -870,7 +870,7 @@ function applyData(){
   `).join("");
 
   const secondName = SITE_DATA.names.second;
-  const stripWords = [`بحبك يا ${secondName}`,`إنتِ حياتي يا ${secondName}`,`قلبي ملكك يا ${secondName}`,`بحبك بحبك يا ${secondName}`];
+  const stripWords = [`بحبك يا ${secondName}`,`إنتِ حياتي يا ${secondName}`,`قلبي ملكك يا ${secondName}`,`بموت فيكى يا ${secondName}`];
   const stripHtml = stripWords.map(w => `<span>${w}</span><span class="s-heart">♥</span>`).join("") .repeat(3);
   $("loveStrip").innerHTML = `<div class="love-strip-track">${stripHtml}</div>`;
 
@@ -1018,11 +1018,10 @@ musicBubble.addEventListener("click",()=>{
 const burstBtn=$("burstBtn");
 const burstMsg=$("burstMsg");
 const loveMsgs=[
-  "بحبك بجنون يا كل حاجة",
+  "بحبك يا رحوبتى",
   "إنتي أجمل حاجة في حياتي",
-  "يا حبيبتي وحب عمري",
-  "مليون بحبك ومش هكفى",
-  "قلبي بيدق باسمك بس"
+  "حبيبة عيوني وروحي وقلبي",
+  "احلي بطاطس فالدنيا",
 ];
 let msgIdx=0;
 burstBtn.addEventListener("click",e=>{
