@@ -849,7 +849,7 @@ function applyData(){
 
   $("reasonsTitle").textContent = SITE_DATA.reasons.title;
   $("reasonsSub").textContent = SITE_DATA.reasons.sub;
-  const reasonEmoji = ["😍","🥰","💕","💖","🫶","🌹","✨","💘","😘","💞"];
+  const reasonEmoji = ["😍","🥰","💕","💖","🫶","💗","✨","💘","😘","💞"];
   $("reasonsGrid").innerHTML = SITE_DATA.reasons.items.map((item,i) => `
     <article class="reason-card reveal" style="transition-delay:${Math.min(i,7)*90}ms">
       <div class="reason-num">${i+1}</div>
@@ -860,7 +860,7 @@ function applyData(){
 
   $("promisesTitle").textContent = SITE_DATA.promises.title;
   $("promisesSub").textContent = SITE_DATA.promises.sub;
-  const promiseEmoji = ["🤝","💍","🌅","🕊️","⭐","💌"];
+  const promiseEmoji = ["🫂","💖","💞","🫶🏻","💗","💌"];
   $("promisesGrid").innerHTML = SITE_DATA.promises.items.map((item,i) => `
     <article class="promise-card reveal" style="transition-delay:${Math.min(i,7)*90}ms">
       <div class="promise-seal">${promiseEmoji[i % promiseEmoji.length]}</div>
